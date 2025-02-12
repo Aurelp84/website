@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Bienvenue sur mon site</h1>
-    <p>Je m'appelle Aurélien Pardo et voici mon site personnel.</p>
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#">Mon Profil ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="cv.html">Mon CV</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle Aurélien Pardo et voici mon site personnel. Vous trouverez ici mon CV, mon portfolio et mes informations de contact.</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact</h3>
+        <p>Email: aurelien.pardo@example.com</p>
+    </footer>
 </body>
 </html>
