@@ -118,3 +118,16 @@ nav ul li a:hover {
     transform: scale(1.05); /* Légère animation */
 }
 
+.liens-utiles {
+    text-align: center;
+}
+
+.liens-utiles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.liens-utiles ul li {
+    display: inline-block;
+    margin: 10px;
+}
