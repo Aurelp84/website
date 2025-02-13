@@ -10,21 +10,21 @@ header {
     background: #333;
     color: white;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
 }
 
 section {
@@ -70,17 +70,6 @@ button {
 button:hover {
     background: #0056b3;
 }
-
-.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-    margin: 5px;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -122,22 +111,16 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.liens-utiles ul {
+.social-links ul, .liens-utiles ul {
     list-style: none;
     padding: 0;
 }
 
-.liens-utiles ul li {
+.social-links li, .liens-utiles ul li {
     display: inline-block;
     margin: 10px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-}
 
 .header-img {
     width: 60px; /* Ajustez la taille selon vos préférences */
@@ -151,9 +134,4 @@ header h1 {
     font-size: 24px;
     flex-grow: 1; /* Permet au titre de s'adapter à l'espace */
     text-align: left;
-}
-
-nav ul {
-    display: flex;
-    gap: 15px;
 }
