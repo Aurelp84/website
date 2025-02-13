@@ -135,3 +135,30 @@ header h1 {
     flex-grow: 1; /* Permet au titre de s'adapter à l'espace */
     text-align: left;
 }
+
+
+.portfolio {
+    text-align: left; /* Aligner le texte à gauche */
+    width: 60%; /* Ajuster la largeur si nécessaire */
+    margin: auto; /* Centrer le bloc */
+}
+
+.portfolio h2 {
+    text-align: center; /* Garde le titre centré */
+}
+
+.portfolio ul {
+    list-style: none; /* Enlève les puces */
+    padding: 0;
+}
+
+.portfolio li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.portfolio li i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 18px; /* Ajuste la taille de l'icône */
+}
