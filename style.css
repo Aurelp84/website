@@ -163,12 +163,7 @@ header h1 {
     font-size: 18px; /* Ajuste la taille de l'icône */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.usmb-logo {
+.usmb-logo img {
     width: 40px;  /* Ajuste selon tes besoins */
     height: 40px;
 }
