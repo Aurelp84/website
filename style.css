@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 .header-img {
     width: 70px; /* Ajustez la taille selon vos préférences */
-    height: 70px;
+    height: 80px;
     border-radius: 50%; /* Pour un effet arrondi */
     margin-right: 15px;
 }
