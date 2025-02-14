@@ -162,8 +162,3 @@ header h1 {
     margin-right: 10px; /* Espacement entre l'icône et le texte */
     font-size: 18px; /* Ajuste la taille de l'icône */
 }
-
-.usmb-logo img {
-    width: 40px;  /* Ajuste selon tes besoins */
-    height: 40px;
-}
