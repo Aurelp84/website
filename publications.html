@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
+    <title>Publications &mdash; Aurélien Pardo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <h1>Publications</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <div class="avatar-sm">
+                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
+                </div>
+                <span class="brand-name">Aurélien Pardo</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2><i class="fa-solid fa-book"></i> Publications</h2>
-        <ul>
-            <!-- ceci est un commentaire
-            <li><strong>A. Pardo</strong>, "Méthodes de Machine Learning pour la prédiction des séries temporelles", <i>Journal de Mathématiques Appliquées</i>, 2024.</li>
-        -->
-        </ul>
-    </section>
+    <main class="container">
+
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-book"></i> Publications</h2>
+
+            <div class="empty-state">
+                <i class="fa-regular fa-newspaper"></i>
+                <p>Aucune publication pour le moment. Les travaux en cours seront listés ici.</p>
+            </div>
+
+            <!-- Décommentez et complétez les publications ci-dessous lorsqu'elles sont disponibles
+            <div class="publication-item">
+                <p><strong>A. Pardo</strong>, "Titre de la publication", <em>Nom du journal</em>, 2025.</p>
+            </div>
+            -->
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="index.html" class="btn">&#127968; Retour à l'accueil</a></p>
-        <p>&copy; 2025 - Aurélien Pardo &mdash; Université de Fribourg</p>
+        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
     </footer>
 
 </body>

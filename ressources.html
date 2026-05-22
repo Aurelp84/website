@@ -3,48 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ressources</title>
+    <title>Ressources &mdash; Aurélien Pardo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <h1>Ressources</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <div class="avatar-sm">
+                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
+                </div>
+                <span class="brand-name">Aurélien Pardo</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="portfolio">
-    <h2>Ressources</h2>
-    <!-- <ul>
-        <li><i class="fa-solid fa-folder"></i><a href="files/projet1.pdf" download>Projet 1 : Analyse Statistique</a></li>
-        <li><i class="fa-solid fa-folder"></i><a href="files/projet2.pdf" download>Projet 2 : Machine Learning</a></li>
-        <li><i class="fa-solid fa-folder"></i><a href="files/projet3.pdf" download>Projet 3 : Modélisation Épidémiologique</a></li>
-    </ul> -->
-    </section>
+    <main class="container">
 
-    <section class="portfolio">
-        <h2>Recommandations</h2>
-        <ul>
-            <!--
-            <li>📊 <a href="https://scikit-learn.org/stable/" target="_blank">Documentation Scikit-Learn (Machine Learning)</a></li>
-            <li>🔗 <a href="https://arxiv.org/" target="_blank">ArXiv - Articles scientifiques en accès libre</a></li>
-            <li>📚 <a href="https://www.kaggle.com/" target="_blank">Kaggle - Compétitions et datasets pour la data science</a></li>
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-book-open"></i> Ressources</h2>
+
+            <div class="empty-state">
+                <i class="fa-regular fa-bookmark"></i>
+                <p>Des ressources pédagogiques et des recommandations seront partagées ici prochainement.</p>
+            </div>
+
+            <!-- Décommentez et complétez les ressources ci-dessous lorsqu'elles sont disponibles
+            <ul class="portfolio-list">
+                <li><i class="fa-solid fa-file-pdf"></i><a href="Files/ressource1.pdf" download>Ressource 1 : Analyse Statistique</a></li>
+            </ul>
             -->
-        </ul>
-    </section>
+        </section>
+
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-star"></i> Recommandations</h2>
+
+            <div class="empty-state">
+                <i class="fa-regular fa-star"></i>
+                <p>Des liens et références utiles seront ajoutés ici.</p>
+            </div>
+
+            <!-- Décommentez et complétez les recommandations ci-dessous lorsqu'elles sont disponibles
+            <ul class="portfolio-list">
+                <li><i class="fa-solid fa-external-link-alt"></i><a href="https://scikit-learn.org/stable/" target="_blank">Documentation Scikit-Learn (Machine Learning)</a></li>
+                <li><i class="fa-solid fa-external-link-alt"></i><a href="https://arxiv.org/" target="_blank">ArXiv — Articles scientifiques en accès libre</a></li>
+                <li><i class="fa-solid fa-external-link-alt"></i><a href="https://www.kaggle.com/" target="_blank">Kaggle — Compétitions et datasets</a></li>
+            </ul>
+            -->
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="index.html" class="btn">&#127968; Retour à l'accueil</a></p>
-        <p>&copy; 2025 - Aurélien Pardo &mdash; Université de Fribourg</p>
+        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
     </footer>
 
 </body>
