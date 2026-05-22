@@ -6,70 +6,107 @@
     <title>Contact &mdash; Aurélien Pardo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <h1>Contact</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <div class="avatar-sm">
+                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
+                </div>
+                <span class="brand-name">Aurélien Pardo</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2><i class="fa-solid fa-address-card"></i> Mes Coordonnées</h2>
-        <p><i class="fa-solid fa-envelope" style="color: #4A90D9; margin-right: 8px;"></i>
-           <strong>Email :</strong> <a href="mailto:aurelienp84@gmail.com">aurelienp84@gmail.com</a></p>
-        <p><i class="fa-solid fa-location-dot" style="color: #4A90D9; margin-right: 8px;"></i>
-           <strong>Localisation :</strong> Boulevard de Pérolles, Université de Fribourg, Fribourg (Suisse)</p>
+    <main class="container">
 
-        <div style="margin-top: 20px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(30,58,95,0.12);">
-            <iframe
-                width="100%"
-                height="380"
-                style="border:0; display:block;"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.3066876963!2d7.151889276659!3d46.79382897130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e68a9ec9cfbcb%3A0xe1d2c8dddbbf2c5!2sUniversit%C3%A9+de+Fribourg+-+P%C3%A9rolles!5e0!3m2!1sfr!2sch!4v1715000000000">
-            </iframe>
-        </div>
-    </section>
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-address-card"></i> Mes Coordonnées</h2>
+            <div class="contact-info">
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <strong>Email :</strong>
+                        <a href="mailto:aurelienp84@gmail.com">aurelienp84@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <strong>Localisation :</strong>
+                        Boulevard de Pérolles, Université de Fribourg, Fribourg (Suisse)
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="360"
+                    style="border:0; display:block;"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.3066876963!2d7.151889276659!3d46.79382897130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e68a9ec9cfbcb%3A0xe1d2c8dddbbf2c5!2sUniversit%C3%A9+de+Fribourg+-+P%C3%A9rolles!5e0!3m2!1sfr!2sch!4v1715000000000">
+                </iframe>
+            </div>
+        </section>
 
-    <section class="social-links">
-        <h2><i class="fa-solid fa-share-nodes"></i> Réseaux Sociaux</h2>
-        <ul>
-            <li><a href="https://scholar.google.com/" class="btn"><img src="Images/google_scholar.png" alt="Google Scholar"></a></li>
-            <li><a href="https://www.linkedin.com/in/aurélien-pardo-24a02324b" class="btn"><img src="Images/linkedin.png" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/Aurelp84/" class="btn"><img src="Images/github.png" alt="GitHub"></a></li>
-        </ul>
-    </section>
+        <section class="card social-card fade-in">
+            <h2><i class="fa-solid fa-share-nodes"></i> Réseaux Sociaux</h2>
+            <div class="social-links">
+                <a href="https://scholar.google.com/" target="_blank" class="social-btn">
+                    <img src="Images/google_scholar.png" alt="Google Scholar">
+                    <span>Google Scholar</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" class="social-btn">
+                    <img src="Images/linkedin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Aurelp84/" target="_blank" class="social-btn">
+                    <img src="Images/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
 
-    <section>
-        <h2><i class="fa-solid fa-paper-plane"></i> Formulaire de Contact</h2>
-        <form action="mailto:aurelienp84@gmail.com" method="post" enctype="text/plain">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-paper-plane"></i> Formulaire de Contact</h2>
+            <form action="mailto:aurelienp84@gmail.com" method="post" enctype="text/plain">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
 
-            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
-        </form>
-    </section>
+                <button type="submit" class="btn btn-accent">
+                    <i class="fa-solid fa-paper-plane"></i> Envoyer
+                </button>
+            </form>
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="index.html" class="btn">&#127968; Retour à l'accueil</a></p>
-        <p>&copy; 2025 - Aurélien Pardo &mdash; Université de Fribourg</p>
+        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
     </footer>
 
 </body>

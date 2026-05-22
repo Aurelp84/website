@@ -3,73 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurélien Pardo</title>
+    <title>Aurélien Pardo — Mathématiques & Data Science</title>
+    <meta name="description" content="Site personnel d'Aurélien Pardo, assistant diplômé à l'Université de Fribourg, spécialisé en mathématiques appliquées et data science.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <img src="Images/Image_personnelle.png" alt="Photo de Aurélien Pardo" class="header-img">
-        <h1>Aurélien Pardo</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="ressources.html">Ressources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <div class="avatar-sm">
+                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
+                </div>
+                <span class="brand-name">Aurélien Pardo</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2><i class="fa-solid fa-user"></i> À propos de moi</h2>
-
-        <div class="profile-badge">
-            <i class="fa-solid fa-graduation-cap"></i>
-            Assistant diplômé &mdash; Université de Fribourg, site de Pérolles
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="avatar-lg">
+                <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
+            </div>
+            <h1 class="hero-name">Aurélien Pardo</h1>
+            <p class="hero-title">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Assistant diplômé &mdash; Université de Fribourg
+            </p>
+            <p class="hero-subtitle">Mathématiques &nbsp;·&nbsp; Data Science &nbsp;·&nbsp; Intelligence Artificielle</p>
+            <div class="hero-actions">
+                <a href="cv.html" class="btn btn-primary">
+                    <i class="fa-solid fa-file-lines"></i> Mon CV
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    <i class="fa-solid fa-envelope"></i> Me contacter
+                </a>
+            </div>
         </div>
-
-        <p>
-            Passionné par les <strong>mathématiques</strong> et la <strong>data science</strong>, je suis en quête de nouveaux défis intellectuels.
-            Mon objectif est d'exploiter les mathématiques pour résoudre des problèmes concrets et innovants.
-        </p>
-        <p>
-            Diplômé du <em>Master Modélisation Mathématique et Analyse Appliquée</em> de l'<a href="https://formations.univ-smb.fr/fr/catalogue/master-XB/sciences-technologies-sante-STS/master-mathematiques-et-applications-KGYQPF57.html"><strong>Université Savoie Mont Blanc</strong></a>,
-            j'ai développé une solide expérience dans les mathématiques générales et en particulier dans les applications liées à la data science et à l'apprentissage machine.
-        </p>
-        <p>
-            Actuellement <strong>assistant diplômé</strong> à l'<strong>Université de Fribourg</strong> (site de Pérolles), je contribue à des activités d'enseignement et de recherche en mathématiques appliquées. Je m'intéresse particulièrement à la modélisation, l'analyse statistique et l'intelligence artificielle au service de problématiques concrètes.
-        </p>
     </section>
 
-    <section>
-        <h2><i class="fa-solid fa-microscope"></i> Intérêts de recherche</h2>
-        <p>Mes recherches portent sur les applications des mathématiques dans des problématiques réelles :</p>
-        <ul>
-            <li><strong>Exploration de diverses théories mathématiques</strong> : Théorie des jeux, théorie de l'information, théorie de la décision.</li>
-            <li><strong>Optimisation de performance et aide à la décision</strong> : Applications au sport et e-sport.</li>
-            <li><strong>Modélisation mathématique</strong> : Applications transversales : démographie, biologie, industrie.</li>
-            <li><strong>Mathématiques de l'apprentissage automatique</strong> : Utilisation de l'outil mathématique pour analyser et explorer les données.</li>
-            <li><strong>Intelligence artificielle explicable (XAI)</strong> : Méthodes d'évaluation de la qualité et précision des modèles d'IA.</li>
-            <li><strong>Traitement du langage naturel</strong> : État de l'art des méthodes actuelles et réflexions sur des applications futures.</li>
-        </ul>
-    </section>
+    <main class="container">
 
-    <section class="social-links">
-        <h2><i class="fa-solid fa-link"></i> Liens utiles</h2>
-        <ul>
-            <li><a href="https://scholar.google.com/" class="btn"><img src="Images/google_scholar.png" alt="Google Scholar"></a></li>
-            <li><a href="https://www.linkedin.com/in/aurélien-pardo-24a02324b" class="btn"><img src="Images/linkedin.png" alt="LinkedIn"></a></li>
-            <li><a href="https://github.com/Aurelp84/" class="btn"><img src="Images/github.png" alt="GitHub"></a></li>
-        </ul>
-    </section>
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-user"></i> À propos de moi</h2>
+            <p>
+                Passionné par les <strong>mathématiques</strong> et la <strong>data science</strong>, je suis en quête de nouveaux défis intellectuels.
+                Mon objectif est d'exploiter les mathématiques pour résoudre des problèmes concrets et innovants.
+            </p>
+            <p>
+                Diplômé du <em>Master Modélisation Mathématique et Analyse Appliquée</em> de l'<a href="https://formations.univ-smb.fr/fr/catalogue/master-XB/sciences-technologies-sante-STS/master-mathematiques-et-applications-KGYQPF57.html" target="_blank"><strong>Université Savoie Mont Blanc</strong></a>,
+                j'ai développé une solide expérience dans les mathématiques générales et en particulier dans les applications liées à la data science et à l'apprentissage machine.
+            </p>
+            <p>
+                Actuellement <strong>assistant diplômé</strong> à l'<strong>Université de Fribourg</strong> (site de Pérolles), je contribue à des activités d'enseignement et de recherche en mathématiques appliquées. Je m'intéresse particulièrement à la modélisation, l'analyse statistique et l'intelligence artificielle au service de problématiques concrètes.
+            </p>
+        </section>
+
+        <section class="card fade-in">
+            <h2><i class="fa-solid fa-microscope"></i> Intérêts de recherche</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <i class="fa-solid fa-chess"></i>
+                    <h3>Théories mathématiques</h3>
+                    <p>Théorie des jeux, de l'information et de la décision</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Sport & Performance</h3>
+                    <p>Optimisation et aide à la décision dans le sport et l'e-sport</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Modélisation</h3>
+                    <p>Applications en démographie, biologie et industrie</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Mathématiques de l'apprentissage automatique et analyse de données</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3>IA Explicable (XAI)</h3>
+                    <p>Évaluation de la qualité et précision des modèles d'IA</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Traitement du langage</h3>
+                    <p>État de l'art des méthodes NLP et perspectives futures</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card social-card fade-in">
+            <h2><i class="fa-solid fa-link"></i> Liens utiles</h2>
+            <div class="social-links">
+                <a href="https://scholar.google.com/" target="_blank" class="social-btn">
+                    <img src="Images/google_scholar.png" alt="Google Scholar">
+                    <span>Google Scholar</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" class="social-btn">
+                    <img src="Images/linkedin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Aurelp84/" target="_blank" class="social-btn">
+                    <img src="Images/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="index.html" class="btn">&#127968; Retour à l'accueil</a></p>
-        <p>&copy; 2025 - Aurélien Pardo &mdash; Université de Fribourg</p>
+        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
     </footer>
 
 </body>
