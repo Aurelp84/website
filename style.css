@@ -300,17 +300,6 @@ nav { margin-left: auto; }
 .interest h3 { font-size: 17px; margin-bottom: 6px; }
 .interest p { font-size: 14.5px; color: var(--muted); line-height: 1.6; }
 
-.interests.featured .interest { background: var(--accent-soft); border-color: #ecd3df; border-top-color: var(--accent); }
-.interests.featured .interest i { color: var(--accent); }
-
-.sub-label {
-    margin: 36px 0 16px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-}
 
 /* ─── GROUP (ASAM) ─── */
 .group-card {
