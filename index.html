@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurélien Pardo — Mathématiques & Data Science</title>
-    <meta name="description" content="Site personnel d'Aurélien Pardo, assistant diplômé à l'Université de Fribourg, spécialisé en mathématiques appliquées et data science.">
+    <title>Aurélien Pardo — Statistique &amp; Data Science</title>
+    <meta name="description" content="Aurélien Pardo, assistant diplômé et doctorant en statistique au sein du groupe de recherche ASAM (Applied Statistics and Modelling), Université de Fribourg. Recherches en statistique floue.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="script.js"></script>
@@ -12,118 +12,185 @@
 <body>
 
     <header>
-        <div class="header-inner">
-            <a href="index.html" class="header-brand">
-                <div class="avatar-sm">
-                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
-                </div>
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand">
                 <span class="brand-name">Aurélien Pardo</span>
+                <span class="brand-sub">Statistique · ASAM · Université de Fribourg</span>
             </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <nav id="mainNav">
+            <nav id="mainNav" aria-label="Navigation principale">
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="cv.html">CV</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="enseignement.html">Enseignement</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="portfolio.html">Réalisations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="avatar-lg">
-                <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
-            </div>
-            <h1 class="hero-name">Aurélien Pardo</h1>
-            <p class="hero-title">
-                <i class="fa-solid fa-graduation-cap"></i>
-                Assistant diplômé &mdash; Université de Fribourg
-            </p>
-            <p class="hero-subtitle">Mathématiques &nbsp;·&nbsp; Data Science &nbsp;·&nbsp; Intelligence Artificielle</p>
-            <div class="hero-actions">
-                <a href="cv.html" class="btn btn-primary">
-                    <i class="fa-solid fa-file-lines"></i> Mon CV
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                    <i class="fa-solid fa-envelope"></i> Me contacter
-                </a>
-            </div>
-        </div>
-    </section>
+    <main>
 
-    <main class="container">
-
-        <section class="card fade-in">
-            <h2><i class="fa-solid fa-user"></i> À propos de moi</h2>
-            <p>
-                Passionné par les <strong>mathématiques</strong> et la <strong>data science</strong>, je suis en quête de nouveaux défis intellectuels.
-                Mon objectif est d'exploiter les mathématiques pour résoudre des problèmes concrets et innovants.
-            </p>
-            <p>
-                Diplômé du <em>Master Modélisation Mathématique et Analyse Appliquée</em> de l'<a href="https://formations.univ-smb.fr/fr/catalogue/master-XB/sciences-technologies-sante-STS/master-mathematiques-et-applications-KGYQPF57.html" target="_blank"><strong>Université Savoie Mont Blanc</strong></a>,
-                j'ai développé une solide expérience dans les mathématiques générales et en particulier dans les applications liées à la data science et à l'apprentissage machine.
-            </p>
-            <p>
-                Actuellement <strong>assistant diplômé</strong> à l'<strong>Université de Fribourg</strong> (site de Pérolles), je contribue à des activités d'enseignement et de recherche en mathématiques appliquées. Je m'intéresse particulièrement à la modélisation, l'analyse statistique et l'intelligence artificielle au service de problématiques concrètes.
-            </p>
-        </section>
-
-        <section class="card fade-in">
-            <h2><i class="fa-solid fa-microscope"></i> Intérêts de recherche</h2>
-            <div class="interests-grid">
-                <div class="interest-card">
-                    <i class="fa-solid fa-chess"></i>
-                    <h3>Théories mathématiques</h3>
-                    <p>Théorie des jeux, de l'information et de la décision</p>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="reveal">
+                    <span class="eyebrow">Doctorant en statistique</span>
+                    <h1>Aurélien Pardo</h1>
+                    <p class="lead">
+                        Assistant diplômé au sein du groupe de recherche <strong>Applied Statistics and Modelling (ASAM)</strong>.
+                        Mes recherches portent sur la <strong>statistique floue</strong>, de ses fondements théoriques jusqu'à son application à des problèmes concrets.
+                    </p>
+                    <p class="affiliation">
+                        <i class="fa-solid fa-building-columns"></i>
+                        Département d'informatique &middot; Université de Fribourg, Suisse
+                    </p>
+                    <div class="actions">
+                        <a href="cv.html" class="btn btn-primary"><i class="fa-solid fa-file-lines"></i> CV académique</a>
+                        <a href="contact.html" class="btn btn-ghost"><i class="fa-regular fa-envelope"></i> Me contacter</a>
+                    </div>
+                    <div class="profiles">
+                        <a class="profile-link orcid" href="https://orcid.org/0009-0006-1533-9383" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                        <a class="profile-link researchgate" href="https://www.researchgate.net/profile/Aurelien-Pardo" target="_blank" rel="noopener"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+                        <a class="profile-link linkedin" href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a class="profile-link github" href="https://github.com/Aurelp84" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a class="profile-link asam" href="https://www.unifr.ch/inf/asam/fr/group/team/people/436202/2ab63" target="_blank" rel="noopener"><i class="fa-solid fa-users"></i> Page ASAM</a>
+                    </div>
                 </div>
-                <div class="interest-card">
-                    <i class="fa-solid fa-trophy"></i>
-                    <h3>Sport & Performance</h3>
-                    <p>Optimisation et aide à la décision dans le sport et l'e-sport</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h3>Modélisation</h3>
-                    <p>Applications en démographie, biologie et industrie</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fa-solid fa-brain"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Mathématiques de l'apprentissage automatique et analyse de données</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <h3>IA Explicable (XAI)</h3>
-                    <p>Évaluation de la qualité et précision des modèles d'IA</p>
-                </div>
-                <div class="interest-card">
-                    <i class="fa-solid fa-language"></i>
-                    <h3>Traitement du langage</h3>
-                    <p>État de l'art des méthodes NLP et perspectives futures</p>
+                <div class="portrait reveal d1">
+                    <img src="Images/photo_profil.jpg" alt="Portrait d'Aurélien Pardo">
                 </div>
             </div>
         </section>
 
-        <section class="card social-card fade-in">
-            <h2><i class="fa-solid fa-link"></i> Liens utiles</h2>
-            <div class="social-links">
-                <a href="https://scholar.google.com/" target="_blank" class="social-btn">
-                    <img src="Images/google_scholar.png" alt="Google Scholar">
-                    <span>Google Scholar</span>
+        <section class="section">
+            <div class="wrap two-col">
+                <div class="reveal">
+                    <div class="section-head">
+                        <span class="eyebrow">À propos</span>
+                        <h2>Parcours</h2>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            Je suis <strong>assistant diplômé et doctorant</strong> au sein du groupe ASAM de l'Université de Fribourg,
+                            sous la direction du Prof. Dr Laurent Donzé. Mes travaux de doctorat portent sur la
+                            <strong>statistique floue</strong>, qui permet de modéliser et d'analyser des données imprécises.
+                        </p>
+                        <p>
+                            Titulaire d'une licence de mathématiques fondamentales et d'un master de mathématiques appliquées
+                            (<em>Modélisation mathématique et analyse appliquée</em>) de l'<a href="https://www.univ-smb.fr/" target="_blank" rel="noopener">Université Savoie Mont Blanc</a>,
+                            j'ai complété ma formation par un master 2 en <em>Stochastique et science des données</em> à l'Université de Turin.
+                        </p>
+                        <p>
+                            J'ai par ailleurs acquis une expérience variée : stage en mathématiques appliquées à l'Institut Fresnel
+                            (réseaux de neurones convolutifs pour l'IRM), stage en science des données chez CFAST,
+                            tutorat universitaire et enseignement des mathématiques.
+                        </p>
+                    </div>
+                </div>
+                <aside class="card reveal d1">
+                    <h3>En bref</h3>
+                    <ul class="facts">
+                        <li><span>Poste</span><strong>Assistant diplômé, doctorant</strong></li>
+                        <li><span>Groupe</span><strong>ASAM — Applied Statistics and Modelling</strong></li>
+                        <li><span>Institution</span><strong>Université de Fribourg</strong></li>
+                        <li><span>Domaine</span><strong>Statistique floue</strong></li>
+                        <li><span>Langues</span><strong>Français, anglais</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="eyebrow">Recherche</span>
+                    <h2>Intérêts de recherche</h2>
+                    <p>Les applications des mathématiques et de la statistique à des problématiques réelles.</p>
+                </div>
+                <div class="interests">
+                    <div class="interest">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <h3>Apprentissage statistique</h3>
+                        <p>Fondements mathématiques de l'apprentissage automatique et analyse de données.</p>
+                    </div>
+                    <div class="interest">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h3>Modélisation</h3>
+                        <p>Applications transversales : démographie, biologie, industrie.</p>
+                    </div>
+                    <div class="interest">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h3>IA explicable (XAI)</h3>
+                        <p>Évaluation de la qualité et de la précision des modèles d'IA.</p>
+                    </div>
+                    <div class="interest">
+                        <i class="fa-solid fa-chess-knight"></i>
+                        <h3>Théorie de la décision</h3>
+                        <p>Théorie des jeux, théorie de l'information et aide à la décision.</p>
+                    </div>
+                    <div class="interest">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h3>Sport &amp; performance</h3>
+                        <p>Optimisation de la performance dans le sport et l'e-sport.</p>
+                    </div>
+                    <div class="interest">
+                        <i class="fa-solid fa-language"></i>
+                        <h3>Traitement du langage</h3>
+                        <p>État de l'art des méthodes de NLP et applications futures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="card group-card">
+                    <div class="logo">
+                        <img src="Images/logo_asam.png" alt="Logo du groupe ASAM — Applied Statistics and Modelling">
+                    </div>
+                    <div>
+                        <span class="eyebrow">Groupe de recherche</span>
+                        <h2 style="font-size:28px; margin-bottom:12px;">Applied Statistics and Modelling</h2>
+                        <p>
+                            Je suis membre du groupe <strong>ASAM</strong> du Département d'informatique de l'Université de Fribourg,
+                            dirigé par le Prof. Dr Laurent Donzé, dont les activités portent sur la statistique appliquée et la modélisation.
+                        </p>
+                        <div class="actions" style="margin-bottom:0;">
+                            <a href="https://www.unifr.ch/inf/asam/fr/group/team/people/436202/2ab63" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fa-solid fa-user"></i> Ma page sur le site du groupe
+                            </a>
+                            <a href="https://www.unifr.ch/inf/asam" target="_blank" rel="noopener" class="btn btn-ghost">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Site du groupe ASAM
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap teasers">
+                <a class="teaser" href="enseignement.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h3>Enseignement</h3>
+                    <p>Séries d'exercices d'Introduction à la statistique et Méthodes d'analyse de données.</p>
+                    <span class="more">Voir les cours &rarr;</span>
                 </a>
-                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" class="social-btn">
-                    <img src="Images/linkedin.png" alt="LinkedIn">
-                    <span>LinkedIn</span>
+                <a class="teaser" href="publications.html">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Publications</h3>
+                    <p>Mes premiers travaux de recherche seront publiés prochainement.</p>
+                    <span class="more">En savoir plus &rarr;</span>
                 </a>
-                <a href="https://github.com/Aurelp84/" target="_blank" class="social-btn">
-                    <img src="Images/github.png" alt="GitHub">
-                    <span>GitHub</span>
+                <a class="teaser" href="portfolio.html">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Réalisations</h3>
+                    <p>Créateur du site du club de handball de Fribourg, handballfribourg.com.</p>
+                    <span class="more">Découvrir &rarr;</span>
                 </a>
             </div>
         </section>
@@ -131,7 +198,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2026</span> Aurélien Pardo &mdash; Groupe ASAM, Université de Fribourg</p>
+            <div class="footer-links">
+                <a href="https://orcid.org/0009-0006-1533-9383" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Aurelien-Pardo" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Aurelp84" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

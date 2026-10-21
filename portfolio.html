@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio &mdash; Aurélien Pardo</title>
+    <title>Réalisations — Aurélien Pardo</title>
+    <meta name="description" content="Réalisations d'Aurélien Pardo, dont le site du club de handball de Fribourg.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="script.js"></script>
@@ -11,57 +12,85 @@
 <body>
 
     <header>
-        <div class="header-inner">
-            <a href="index.html" class="header-brand">
-                <div class="avatar-sm">
-                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
-                </div>
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand">
                 <span class="brand-name">Aurélien Pardo</span>
+                <span class="brand-sub">Statistique · ASAM · Université de Fribourg</span>
             </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <nav id="mainNav">
+            <nav id="mainNav" aria-label="Navigation principale">
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="cv.html">CV</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="enseignement.html">Enseignement</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="portfolio.html">Réalisations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <main>
 
-        <section class="card fade-in">
-            <h2><i class="fa-solid fa-folder-open"></i> Mon Portfolio</h2>
-
-            <div class="empty-state">
-                <i class="fa-regular fa-folder-open"></i>
-                <p>Les projets arrivent bientôt. Revenez consulter cette page prochainement.</p>
+        <section class="page-head">
+            <div class="wrap reveal">
+                <span class="eyebrow">Réalisations</span>
+                <h1>Mes réalisations</h1>
+                <p>Réalisations menées en parallèle de mes activités de recherche et d'enseignement.</p>
             </div>
+        </section>
 
-            <!-- Décommentez et complétez les projets ci-dessous lorsqu'ils sont disponibles
-            <ul class="portfolio-list">
-                <li>
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <a href="Files/projet1.pdf" download>Projet 1 : Titre du projet</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <a href="Files/projet2.pdf" download>Projet 2 : Titre du projet</a>
-                </li>
-            </ul>
-            -->
+        <section class="section">
+            <div class="wrap course-list">
+
+                <article class="card project-card reveal d1">
+                    <div>
+                        <span class="eyebrow">Site web &middot; Création</span>
+                        <h3 style="font-size:24px;">Handball Fribourg</h3>
+                        <p class="url"><i class="fa-solid fa-globe"></i> handballfribourg.com</p>
+                        <p>
+                            Créateur du site web du club de handball de Fribourg, dont je suis également joueur.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Conception</span>
+                            <span class="tag">Développement web</span>
+                            <span class="tag green">Sport</span>
+                        </div>
+                    </div>
+                    <a href="https://www.handballfribourg.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                        Visiter le site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="card project-card reveal d2">
+                    <div>
+                        <span class="eyebrow">Code &middot; GitHub</span>
+                        <h3 style="font-size:24px;">Dépôts de code</h3>
+                        <p>Mes projets en science des données et en statistique (Python, R) sont disponibles sur GitHub.</p>
+                    </div>
+                    <a href="https://github.com/Aurelp84" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-github"></i> Voir sur GitHub
+                    </a>
+                </article>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2026</span> Aurélien Pardo &mdash; Groupe ASAM, Université de Fribourg</p>
+            <div class="footer-links">
+                <a href="https://orcid.org/0009-0006-1533-9383" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Aurelien-Pardo" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Aurelp84" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

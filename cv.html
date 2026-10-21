@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae &mdash; Aurélien Pardo</title>
+    <title>CV — Aurélien Pardo</title>
+    <meta name="description" content="Curriculum vitae académique d'Aurélien Pardo : expérience, formation, compétences et affiliations.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script defer src="script.js"></script>
@@ -11,48 +12,194 @@
 <body>
 
     <header>
-        <div class="header-inner">
-            <a href="index.html" class="header-brand">
-                <div class="avatar-sm">
-                    <img src="Images/Image_personnelle.png" alt="Aurélien Pardo" onerror="this.style.display='none';this.parentElement.textContent='AP'">
-                </div>
+        <div class="wrap header-inner">
+            <a href="index.html" class="brand">
                 <span class="brand-name">Aurélien Pardo</span>
+                <span class="brand-sub">Statistique · ASAM · Université de Fribourg</span>
             </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <nav id="mainNav">
+            <nav id="mainNav" aria-label="Navigation principale">
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="cv.html">CV</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="enseignement.html">Enseignement</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="ressources.html">Ressources</a></li>
+                    <li><a href="portfolio.html">Réalisations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <main>
 
-        <section class="card fade-in">
-            <h2><i class="fa-solid fa-file-lines"></i> Curriculum Vitae</h2>
-            <p>Vous trouverez ci-dessous mon CV ainsi qu'une version en anglais. N'hésitez pas à les télécharger pour en savoir plus sur mon parcours académique et professionnel.</p>
-            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:20px;">
-                <a href="Files/CV_AurelienPardo.pdf" download class="btn btn-accent">
-                    <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV (FR)
-                </a>
-                <a href="Files/CV_Aurelien_Pardo_English.pdf" download class="btn btn-accent">
-                    <i class="fa-solid fa-file-pdf"></i> Download my CV (EN)
-                </a>
+        <section class="page-head">
+            <div class="wrap reveal">
+                <span class="eyebrow">Curriculum vitae</span>
+                <h1>Parcours académique et professionnel</h1>
+                <p>
+                    Assistant diplômé et doctorant en statistique au sein du groupe ASAM de l'Université de Fribourg,
+                    titulaire d'un master en mathématiques appliquées et d'un master 2 en stochastique et science des données.
+                </p>
+                <div class="downloads">
+                    <a href="Files/CV_Aurelien_Pardo_academique.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-pdf"></i> CV académique (PDF, FR)
+                    </a>
+                    <a href="Files/CV_Aurelien_Pardo_English.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-pdf"></i> CV (PDF, English)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap two-col">
+
+                <div class="reveal d1">
+                    <div class="block">
+                        <h2 class="block-title"><i class="fa-solid fa-briefcase"></i> Expérience</h2>
+                        <ul class="timeline">
+                            <li class="current">
+                                <span class="date">08/2025 — aujourd'hui</span>
+                                <h3>Assistant diplômé, doctorant</h3>
+                                <div class="org">Groupe <a href="https://www.unifr.ch/inf/asam" target="_blank" rel="noopener">ASAM</a>, Université de Fribourg, Suisse</div>
+                                <p class="desc">Auprès du Prof. Dr Laurent Donzé, responsable du groupe <em>Applied Statistics and Modelling</em>. Domaine de spécialisation : statistique.</p>
+                            </li>
+                            <li>
+                                <span class="date">10/2024 — 07/2025</span>
+                                <h3>Professeur de mathématiques</h3>
+                                <div class="org"><a href="https://www.acadomia.fr/" target="_blank" rel="noopener">Acadomia</a>, région Provence-Alpes-Côte d'Azur, France</div>
+                            </li>
+                            <li>
+                                <span class="date">02/2024 — 09/2024</span>
+                                <h3>Stage en science des données</h3>
+                                <div class="org"><a href="https://www.cfast-web.fr/" target="_blank" rel="noopener">CFAST</a>, Dijon, France</div>
+                                <p class="desc">Mise en œuvre d'algorithmes d'apprentissage automatique pour une base de données de télécommunications.</p>
+                            </li>
+                            <li>
+                                <span class="date">05/2023 — 08/2023</span>
+                                <h3>Stage en mathématiques appliquées</h3>
+                                <div class="org"><a href="https://www.fresnel.fr/wp/" target="_blank" rel="noopener">Institut Fresnel</a>, Marseille, France</div>
+                                <p class="desc">Réseaux de neurones convolutifs pour accélérer l'acquisition en IRM.</p>
+                            </li>
+                            <li>
+                                <span class="date">02/2022 — 04/2022</span>
+                                <h3>Tuteur en mathématiques</h3>
+                                <div class="org">Université Savoie Mont Blanc, Le Bourget-du-Lac, France</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="block">
+                        <h2 class="block-title"><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
+                        <ul class="timeline">
+                            <li>
+                                <span class="date">09/2023 — 02/2024</span>
+                                <h3>Master 2 Stochastique et science des données</h3>
+                                <div class="org"><a href="http://www.master-sds.unito.it/do/home.pl" target="_blank" rel="noopener">Université de Turin</a>, Italie</div>
+                                <p class="desc">Apprentissage statistique, exploration de données, statistiques bayésiennes.</p>
+                            </li>
+                            <li>
+                                <span class="date">09/2022 — 09/2024</span>
+                                <h3>Master de mathématiques appliquées</h3>
+                                <div class="org">Université Savoie Mont Blanc, Le Bourget-du-Lac, France</div>
+                                <p class="desc">Modélisation mathématique et analyse appliquée — mention Bien.</p>
+                            </li>
+                            <li>
+                                <span class="date">09/2019 — 09/2024</span>
+                                <h3>Cursus Master en Ingénierie (CMI)</h3>
+                                <div class="org">Université Savoie Mont Blanc, Le Bourget-du-Lac, France</div>
+                                <p class="desc">Modélisation mathématique et simulation numérique — promotion René Descartes.</p>
+                            </li>
+                            <li>
+                                <span class="date">09/2019 — 07/2022</span>
+                                <h3>Licence de mathématiques fondamentales</h3>
+                                <div class="org">Université Savoie Mont Blanc, Le Bourget-du-Lac, France</div>
+                                <p class="desc">Mathématiques, informatique, physique.</p>
+                            </li>
+                            <li>
+                                <span class="date">09/2018 — 07/2019</span>
+                                <h3>Classe préparatoire ECS (1<sup>re</sup> année)</h3>
+                                <div class="org">Lycée Paul Cézanne, Aix-en-Provence, France</div>
+                            </li>
+                            <li>
+                                <span class="date">09/2015 — 07/2018</span>
+                                <h3>Baccalauréat scientifique, spécialité mathématiques</h3>
+                                <div class="org">Lycée Val de Durance, Pertuis, France</div>
+                                <p class="desc">Mention Bien.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="side reveal d2">
+                    <div class="card">
+                        <h3><i class="fa-solid fa-code"></i> Compétences</h3>
+                        <p class="label">Programmation</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Matlab</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">LaTeX</span>
+                        </div>
+                        <p class="label">Logiciels statistiques</p>
+                        <div class="tags">
+                            <span class="tag green">R</span>
+                            <span class="tag green">SPSS</span>
+                        </div>
+                        <p class="label">Plateformes web &amp; enseignement</p>
+                        <div class="tags">
+                            <span class="tag">Drupal</span>
+                            <span class="tag">MODX</span>
+                            <span class="tag">Moodle</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fa-solid fa-language"></i> Langues</h3>
+                        <ul class="facts">
+                            <li><span>Français</span><strong>Langue maternelle</strong></li>
+                            <li><span>Anglais</span><strong>Bon niveau, oral et écrit</strong></li>
+                            <li><span>Espagnol</span><strong>Compréhension passive</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fa-solid fa-landmark"></i> Affiliations</h3>
+                        <ul class="facts">
+                            <li><span>Depuis 2024</span><strong><a href="https://www.sfds.asso.fr" target="_blank" rel="noopener">Société Française de Statistique</a> (SFdS)</strong></li>
+                            <li><span>Depuis 2024</span><strong><a href="https://smf.emath.fr/" target="_blank" rel="noopener">Société Mathématique de France</a> (SMF)</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fa-solid fa-person-running"></i> Activités</h3>
+                        <ul class="facts">
+                            <li><span>Depuis 2025</span><strong>Membre de l'équipe de handball de Fribourg</strong></li>
+                            <li><span>Web</span><strong>Créateur du site <a href="https://www.handballfribourg.com/" target="_blank" rel="noopener">handballfribourg.com</a></strong></li>
+                        </ul>
+                    </div>
+                </aside>
+
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Aurélien Pardo &mdash; Université de Fribourg</p>
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2026</span> Aurélien Pardo &mdash; Groupe ASAM, Université de Fribourg</p>
+            <div class="footer-links">
+                <a href="https://orcid.org/0009-0006-1533-9383" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Aurelien-Pardo" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="https://www.linkedin.com/in/aur%C3%A9lien-pardo-24a02324b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Aurelp84" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>
